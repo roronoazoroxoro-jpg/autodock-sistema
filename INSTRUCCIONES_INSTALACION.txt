@@ -1,0 +1,174 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    GUÍA DE INSTALACIÓN — SISTEMA DE DOCKING MOLECULAR      ║
+║              AutoDock Vina 1.2.7 + MGLTools 1.5.6 + Flask Web App           ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+CONTENIDO DEL USB:
+  ✓ Todos los scripts del sistema de docking
+  ✓ Interfaz web Flask  
+  ✓ AutoDock Vina 1.2.7 (ya incluido)
+  ✓ Python 3.11.9 (descargado)
+  ✓ Dependencias pip (21 wheels offline)
+  ⚠ MGLTools 1.5.6 (descarga automática si hay internet)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+PASOS PARA INSTALAR TODO EN UNA NUEVA COMPUTADORA:
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Conecta el USB en la computadora del doctor
+
+2. Abre el archivo:
+   D:\AutoDockVina\INSTALAR_TODO.bat
+   (o donde hayas copiado el pendrive)
+
+3. El instalador hará automáticamente:
+   ✓ Instalar Python 3.11
+   ✓ Crear un entorno virtual
+   ✓ Instalar todas las librerías (Flask, BioPython, etc.)
+   ✓ Intentar instalar MGLTools (si hay internet)
+   ✓ Crear iconos en el Escritorio
+
+4. Espera a que termine (5-15 minutos según la PC)
+   NO CIERRES LA VENTANA HASTA QUE DIGA "¡LISTO!"
+
+5. Cuando termine, encontrarás en el Escritorio:
+   • Docking Molecular - Web ........... (interfaz principal)
+   • AutoDockTools 1.5.6 ............... (preparación de moléculas)
+   • PMV 1.5.6 ......................... (visualizador 3D)
+   • Vision 1.5.6 ...................... (análisis de moléculas)
+   • CADD 1.5.6 ........................ (herramientas científicas)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+¿QUÉ HACE CADA PROGRAMA?
+═══════════════════════════════════════════════════════════════════════════════
+
+  🔬 Docking Molecular - Web
+     → Interfaz web completa (lo más fácil de usar)
+     → Sube moléculas, configura parámetros y ejecuta docking
+     → Ver resultados en navegador
+
+  🛠️ AutoDockTools 1.5.6
+     → Prepara archivos PDB para docking
+     → Convierte a PDBQT
+     → Configura caja de docking (grid box)
+
+  👁️ PMV (Python Molecular Viewer)
+     → Visualiza moléculas en 3D
+     → Ver estructura de proteínas y ligandos
+
+  🔍 Vision & CADD
+     → Análisis adicionales de moléculas
+
+
+═══════════════════════════════════════════════════════════════════════════════
+REQUISITOS MÍNIMOS DE PC:
+═══════════════════════════════════════════════════════════════════════════════
+
+  • Windows 10 u 11 (64-bit)
+  • 4 GB RAM (8 GB recomendado)
+  • 2 GB espacio libre en disco (mínimo)
+  • Conexión a internet DURANTE LA INSTALACIÓN 
+    (únicamente para descargar MGLTools si no está incluido)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SI ALGO FALLA:
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Cierra todas las ventanas
+2. Ejecuta nuevamente INSTALAR_TODO.bat
+3. Si la descarga de MGLTools falla:
+   - Aún puedes usar el sistema web (no lo necesita)
+   - Descárgalo manualmente desde: https://ccsb.scripps.edu/mgltools/
+   - O usa la línea de comandos para preparar moléculas
+
+4. Si Python no se instala:
+   - Descarga manualmente: https://www.python.org/downloads/
+   - Marca la opción "Add Python to PATH"
+   - Vuelve a ejecutar INSTALAR_TODO.bat
+
+
+═══════════════════════════════════════════════════════════════════════════════
+PRIMERAS PRUEBAS:
+═══════════════════════════════════════════════════════════════════════════════
+
+Después de instalar, haz doble clic en: "Docking Molecular - Web"
+
+Se abrirá una ventana del navegador en:
+  http://localhost:5000
+
+Sube los archivos de ejemplo en la carpeta:
+  C:\Users\[TuUsuario]\Desktop\[donde instalaste]\receptors\ (proteína)
+  C:\Users\[TuUsuario]\Desktop\[donde instalaste]\ligands\   (droga)
+
+Presiona "Ejecutar Docking" y espera los resultados.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+ESTRUCTURA DEL SISTEMA:
+═══════════════════════════════════════════════════════════════════════════════
+
+C:\Users\[Usuario]\[Ruta donde copiaste]
+  ├── INSTALAR_TODO.bat .................. Instalador principal ← EJECUTAR ESTO
+  ├── INICIAR.bat ........................ Iniciar la web (después de instalar)
+  ├── INICIAR_WEB.bat ................... Alternativa para iniciar web
+  ├── DOCK.bat ........................... Docking desde línea de comandos
+  ├── webapp.py .......................... Aplicación Flask
+  ├── main.py ............................ Script principal
+  ├── config.yaml ........................ Configuración del sistema
+  ├── requirements.txt ................... Dependencias Python
+  ├── scripts/ ........................... Módulos del sistema
+  ├── receptors/ ......................... Archivos de proteínas (*.pdb)
+  ├── ligands/ ........................... Archivos de drogas (*.pdb)
+  ├── outputs/ ........................... Resultados de docking (*.pdbqt)
+  ├── templates/ ......................... Página web HTML
+  ├── tools/ ............................. AutoDock Vina ejecutable
+  ├── data/ .............................. Datos adicionales
+  └── instaladores/ ..................... Descargados aquí
+      ├── python_installer.exe ........... Python 3.11
+      ├── mgltools_installer.exe ........ MGLTools (si está)
+      └── pip_wheels/ ................... Librerías Python
+
+
+═══════════════════════════════════════════════════════════════════════════════
+PREGUNTAS FRECUENTES:
+═══════════════════════════════════════════════════════════════════════════════
+
+P: ¿Puedo usar esto sin internet?
+R: Sí, pero necesitas internet SOLO la primera vez para descargar MGLTools.
+   Después, todo funciona sin conexión.
+
+P: ¿Cuánto espacio ocupará todo?
+R: ~500 MB en total (Python + librerías + herramientas)
+
+P: ¿Es seguro ejecutar los .bat?
+R: Sí, son scripts de instalación automática seguros.
+
+P: ¿Qué pasa si desconecto el USB durante la instalación?
+R: La instalación se guarda en la PC, no en el USB. El USB solo es
+   el medio de transporte.
+
+P: ¿Puedo copiar el USB a otra PC?
+R: Sí, es completamente portable. Cada PC instala independientemente.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+SOPORTE:
+═══════════════════════════════════════════════════════════════════════════════
+
+Si necesitas ayuda:
+  1. Lee la "GUIA_DE_USO.md" incluida en el USB
+  2. Revisa "MANUAL_DEL_DOCTOR.md"
+  3. Consulta los logs en la carpeta del proyecto
+
+
+═══════════════════════════════════════════════════════════════════════════════
+¡TODO LISTO PARA INSTALAR!
+═══════════════════════════════════════════════════════════════════════════════
+
+Guarda este archivo como referencia. El próximo paso es:
+  → Ejecuta INSTALAR_TODO.bat
+
+¡Éxito! 🚀

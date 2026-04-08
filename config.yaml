@@ -1,0 +1,28 @@
+project:
+  data_dir: data
+  ligands_dir: ligands
+  receptors_dir: receptors
+  outputs_dir: outputs
+
+inputs:
+  receptor: receptors/receptor.pdbqt
+  ligand: ligands/ligand.pdbqt
+
+tools:
+  # Vina: dejalo vacio ("") para detectar automaticamente desde tools/vina/vina.exe
+  # O pon la ruta absoluta si instalaste Vina en otro lugar
+  vina_executable: ""
+  # MGLTools: ruta de instalacion estandar en Windows (la instala scripts/install_windows.ps1)
+  mgltools_root: "C:/Program Files (x86)/MGLTools-1.5.6"
+
+docking:
+  center_x: 10.0
+  center_y: 10.0
+  center_z: 10.0
+  size_x: 20.0
+  size_y: 20.0
+  size_z: 20.0
+  exhaustiveness: 8
+  num_modes: 9
+  energy_range: 3
+  cpu: 0

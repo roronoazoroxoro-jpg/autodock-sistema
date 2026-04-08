@@ -1,0 +1,29 @@
+# Entorno virtual Python
+.venv/
+
+# Caché Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Outputs generados (resultados de docking)
+outputs/*.pdbqt
+outputs/*.log
+outputs/prepared/
+
+# Archivos temporales
+tools/tmp/
+*.tmp
+*.bak
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Mantener carpetas vacías
+!outputs/.gitkeep
+!outputs/prepared/.gitkeep
+!tools/tmp/.gitkeep

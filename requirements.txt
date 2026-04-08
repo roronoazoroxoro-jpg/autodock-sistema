@@ -1,0 +1,6 @@
+biopython>=1.84,<2
+numpy>=1.26,<3
+pandas>=2.2,<3
+PyYAML>=6.0,<7
+requests>=2.32,<3
+Flask>=3.0,<4
