@@ -136,3 +136,28 @@ http://127.0.0.1:5000
 
 Desde la web puedes subir receptor y ligando y ejecutar docking.
 
+## 10) Agente para soporte al doctor (VS Code)
+
+Este proyecto incluye un agente personalizado para asistir al doctor en el uso de:
+
+- Sistema web de AutoDockVina
+- AutoDockTools 1.5.6
+- PMV 1.5.6
+- Vision 1.5.6
+- CADD 1.5.6
+
+Ubicacion del agente:
+
+- `.github/agents/doctor-docking.agent.md`
+
+Manual de consulta rapida para preguntas del doctor:
+
+- `MANUAL_ASISTENTE_DOCTOR.md`
+
+Uso sugerido:
+
+1. Abrir este proyecto en VS Code.
+2. En el selector de agente de Copilot Chat, elegir "Asistente Doctor Docking".
+3. Preguntar en lenguaje natural el objetivo o error.
+4. Seguir los pasos entregados y validar con los criterios indicados.
+
