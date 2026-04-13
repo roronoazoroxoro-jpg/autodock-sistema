@@ -10,6 +10,21 @@ set "SC_MGL=%PROGRAMFILES(X86)%\MGLTools-1.5.6"
 if not exist "%SC_MGL%" set "SC_MGL=%USERPROFILE%\Desktop\sistema para el doctor policonsultorio\MGLTools-1.5.6"
 if not exist "%SC_MGL%" set "SC_MGL=C:\MGLTools-1.5.6"
 
+:: Reparar lanzadores de MGLTools cuando vienen con ruta fija invalida
+if exist "%SC_MGL%\python.exe" (
+    >"%SC_MGL%\adt.bat" echo @echo off
+    >>"%SC_MGL%\adt.bat" echo "%%~dp0python.exe" "%%~dp0Lib\site-packages\AutoDockTools\bin\runAdt.py" %%*
+
+    >"%SC_MGL%\pmv.bat" echo @echo off
+    >>"%SC_MGL%\pmv.bat" echo "%%~dp0python.exe" "%%~dp0Lib\site-packages\Pmv\bin\runPmv.py" %%*
+
+    >"%SC_MGL%\vision.bat" echo @echo off
+    >>"%SC_MGL%\vision.bat" echo "%%~dp0python.exe" "%%~dp0Lib\site-packages\Vision\bin\runVision.py" %%*
+
+    >"%SC_MGL%\cadd.bat" echo @echo off
+    >>"%SC_MGL%\cadd.bat" echo "%%~dp0python.exe" "%%~dp0Lib\site-packages\CADD\bin\runCADD.py" %%*
+)
+
 echo Creando iconos en el Escritorio...
 
 :: --- 1: Sistema Web ---

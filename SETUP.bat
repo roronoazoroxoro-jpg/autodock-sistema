@@ -2,6 +2,9 @@
 chcp 65001 >nul
 title AutoDock Vina MVP - Configuracion Inicial
 
+set "PROYECTO=%~dp0"
+if "%PROYECTO:~-1%"=="\" set "PROYECTO=%PROYECTO:~0,-1%"
+
 echo.
 echo ================================================================
 echo   AUTODOCK VINA MVP  -  Configuracion de Primera Vez
@@ -26,10 +29,10 @@ for /f "tokens=*" %%v in ('python --version 2^>^&1') do echo         Encontrado:
 :: ---------- 2. Crear entorno virtual ----------
 echo.
 echo [2/5] Configurando entorno virtual Python...
-if exist ".venv\Scripts\python.exe" (
+if exist "%PROYECTO%\.venv\Scripts\python.exe" (
     echo         Entorno virtual ya existe, omitiendo creacion.
 ) else (
-    python -m venv .venv
+    python -m venv "%PROYECTO%\.venv"
     if %errorlevel% neq 0 (
         echo [ERROR] No se pudo crear el entorno virtual.
         pause
@@ -41,7 +44,7 @@ if exist ".venv\Scripts\python.exe" (
 :: ---------- 3. Instalar dependencias ----------
 echo.
 echo [3/5] Instalando dependencias Python...
-.venv\Scripts\pip install -r requirements.txt -q --disable-pip-version-check
+"%PROYECTO%\.venv\Scripts\pip" install -r "%PROYECTO%\requirements.txt" -q --disable-pip-version-check
 if %errorlevel% neq 0 (
     echo [ERROR] Error al instalar dependencias. Revisa requirements.txt.
     pause
@@ -53,7 +56,7 @@ echo         Dependencias instaladas correctamente.
 echo.
 echo [4/5] Instalando MGLTools (requerido para preparar moleculas PDB)...
 echo         Esto puede tardar unos minutos. Se descargara el instalador (~73 MB)...
-powershell -ExecutionPolicy Bypass -File "scripts\install_windows.ps1"
+powershell -ExecutionPolicy Bypass -File "%PROYECTO%\scripts\install_windows.ps1"
 if %errorlevel% neq 0 (
     echo.
     echo [WARN] La instalacion de MGLTools reporto un error.
@@ -66,7 +69,7 @@ if %errorlevel% neq 0 (
 echo.
 echo [5/5] Verificando instalacion completa...
 echo.
-.venv\Scripts\python -m scripts.verify_install
+"%PROYECTO%\.venv\Scripts\python" -m scripts.verify_install
 echo.
 echo ================================================================
 echo   SETUP COMPLETADO

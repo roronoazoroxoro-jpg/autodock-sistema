@@ -38,6 +38,8 @@ from scripts.prepare_ligand import prepare_ligand
 from scripts.prepare_receptor import prepare_receptor
 from scripts.run_vina import run_vina
 
+PROJECT_ROOT = Path(__file__).resolve().parent
+
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Pipeline MVP AutoDock Vina en Windows")
@@ -49,16 +51,20 @@ def build_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def _as_abs(path_str: str) -> Path:
-    return Path(path_str).expanduser().resolve()
+def _as_abs(path_str: str, base: Path | None = None) -> Path:
+    path = Path(path_str).expanduser()
+    if path.is_absolute():
+        return path.resolve()
+    return ((base or PROJECT_ROOT) / path).resolve()
 
 
 def main() -> None:
     args = build_parser().parse_args()
     setup_logging(verbose=args.verbose)
 
-    config_path = _as_abs(args.config)
+    config_path = _as_abs(args.config, base=PROJECT_ROOT)
     cfg = load_config(config_path)
+    config_base = config_path.parent
 
     project_cfg = cfg.get("project", {})
     inputs_cfg = cfg.get("inputs", {})
@@ -69,7 +75,7 @@ def main() -> None:
         if key not in docking_cfg:
             raise KeyError(f"Falta parametro de docking en config.yaml: {key}")
 
-    outputs_dir = _as_abs(project_cfg.get("outputs_dir", "outputs"))
+    outputs_dir = _as_abs(project_cfg.get("outputs_dir", "outputs"), base=config_base)
     ensure_dir(outputs_dir)
     prepared_dir = outputs_dir / "prepared"
     ensure_dir(prepared_dir)
@@ -82,13 +88,13 @@ def main() -> None:
             "o pasarlos por CLI con --receptor y --ligand"
         )
 
-    receptor_input = _as_abs(receptor_arg)
-    ligand_input = _as_abs(ligand_arg)
+    receptor_input = _as_abs(receptor_arg, base=config_base)
+    ligand_input = _as_abs(ligand_arg, base=config_base)
     require_file(receptor_input, "Archivo receptor")
     require_file(ligand_input, "Archivo ligando")
 
     mgl_root_raw = tools_cfg.get("mgltools_root", "")
-    mgl_root = _as_abs(mgl_root_raw) if mgl_root_raw else None
+    mgl_root = _as_abs(mgl_root_raw, base=config_base) if mgl_root_raw else None
 
     if args.skip_prepare:
         receptor_pdbqt = receptor_input
@@ -114,7 +120,7 @@ def main() -> None:
             prepare_ligand(ligand_input, ligand_pdbqt, mgl_root)
 
     vina_raw = tools_cfg.get("vina_executable", "")
-    vina_path = _as_abs(vina_raw) if vina_raw else None
+    vina_path = _as_abs(vina_raw, base=config_base) if vina_raw else None
 
     output_pdbqt = outputs_dir / f"docked_{receptor_input.stem}_{ligand_input.stem}.pdbqt"
     output_log = outputs_dir / f"docking_{receptor_input.stem}_{ligand_input.stem}.log"
