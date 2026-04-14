@@ -3,7 +3,7 @@
 ║              AutoDock Vina 1.2.7 + MGLTools 1.5.6 + Flask Web App           ║
 ╚════════════════════════════════════════════════════════════════════════════╝
 
-CONTENIDO DEL USB:
+CONTENIDO DEL PAQUETE (ZIP del repositorio o USB):
   ✓ Todos los scripts del sistema de docking
   ✓ Interfaz web Flask  
   ✓ AutoDock Vina 1.2.7 (ya incluido)
@@ -16,23 +16,27 @@ CONTENIDO DEL USB:
 PASOS PARA INSTALAR TODO EN UNA NUEVA COMPUTADORA:
 ═══════════════════════════════════════════════════════════════════════════════
 
-1. Conecta el USB en la computadora del doctor
+1. Descarga el proyecto desde GitHub como ZIP
+   (Code -> Download ZIP)
 
-2. Abre el archivo:
-   D:\AutoDockVina\INSTALAR_TODO.bat
-   (o donde hayas copiado el pendrive)
+2. Extrae el ZIP completo en la computadora del doctor
+   Ejemplo: C:\AutoDockVina
 
-3. El instalador hará automáticamente:
+3. Abre el archivo:
+   C:\AutoDockVina\INSTALAR_TODO.bat
+   (o la ruta donde hayas extraido el ZIP)
+
+4. El instalador hará automáticamente:
    ✓ Instalar Python 3.11
    ✓ Crear un entorno virtual
    ✓ Instalar todas las librerías (Flask, BioPython, etc.)
    ✓ Intentar instalar MGLTools (si hay internet)
    ✓ Crear iconos en el Escritorio
 
-4. Espera a que termine (5-15 minutos según la PC)
+5. Espera a que termine (5-15 minutos según la PC)
    NO CIERRES LA VENTANA HASTA QUE DIGA "¡LISTO!"
 
-5. Cuando termine, encontrarás en el Escritorio:
+6. Cuando termine, encontrarás en el Escritorio:
    • Docking Molecular - Web ........... (interfaz principal)
    • AutoDockTools 1.5.6 ............... (preparación de moléculas)
    • PMV 1.5.6 ......................... (visualizador 3D)

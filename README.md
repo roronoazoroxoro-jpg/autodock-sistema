@@ -2,6 +2,25 @@
 
 MVP reproducible para docking molecular con AutoDock Vina + AutoDockTools (MGLTools) integrado con Python.
 
+## Instalacion desde tu repositorio (ZIP de GitHub)
+
+Si vas a descargar este sistema desde tu repositorio y luego instalar en otra PC, sigue este flujo:
+
+1. En GitHub, descargar como ZIP (`Code` -> `Download ZIP`).
+2. Extraer el ZIP completo en una carpeta local (por ejemplo `C:\AutoDockVina`).
+3. Ejecutar `INSTALAR_TODO.bat` (idealmente como administrador).
+4. Esperar a que termine la instalacion (Python, dependencias, MGLTools y accesos directos).
+5. Verificar que en el Escritorio queden estas 5 herramientas:
+  - `Docking Molecular - Web`
+  - `AutoDockTools 1.5.6`
+  - `PMV 1.5.6`
+  - `Vision 1.5.6`
+  - `CADD 1.5.6`
+
+Nota:
+- `tools/vina/vina.exe` ya viene en el proyecto.
+- Si MGLTools no se instala automaticamente por internet, puedes instalarlo manualmente y volver a ejecutar `INSTALAR_TODO.bat`.
+
 ## 1) Estructura
 
 ```text
