@@ -33,17 +33,17 @@
         linear-gradient(150deg, var(--bg-1), var(--bg-2));
       color: var(--ink);
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       padding: 28px 16px;
+      overflow-x: hidden;
     }
 
     .layout {
-      width: min(980px, 100%);
+      width: min(1180px, 100%);
+      margin: 0 auto;
       display: grid;
-      grid-template-columns: 1.1fr 1fr;
+      grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
       gap: 18px;
+      min-width: 0;
     }
 
     .panel {
@@ -52,6 +52,7 @@
       border-radius: 18px;
       box-shadow: var(--shadow);
       overflow: hidden;
+      min-width: 0;
     }
 
     .hero {
@@ -119,6 +120,73 @@
       animation: rise 0.35s ease-out;
     }
 
+    .section-nav {
+      position: sticky;
+      top: 10px;
+      z-index: 15;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      background: rgba(255, 253, 248, 0.92);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px;
+      backdrop-filter: blur(3px);
+    }
+
+    .section-nav a {
+      text-decoration: none;
+      color: #14544f;
+      background: #eef8f4;
+      border: 1px solid #cfe1db;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    .section-nav a:hover {
+      background: #e1f4ed;
+    }
+
+    .section-card {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fff;
+      padding: 12px;
+      display: grid;
+      gap: 10px;
+      scroll-margin-top: 72px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+      border-bottom: 1px dashed #dbe8e3;
+      padding-bottom: 8px;
+    }
+
+    .section-title {
+      margin: 0;
+      font-size: 0.96rem;
+      font-weight: 900;
+      color: #133f3a;
+    }
+
+    .section-tag {
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: #275651;
+      border: 1px solid #cfe1db;
+      background: #f3faf7;
+      border-radius: 999px;
+      padding: 4px 8px;
+    }
+
     .messages {
       list-style: none;
       padding: 0;
@@ -146,6 +214,334 @@
       border-color: #edc4c4;
     }
 
+    .result-box {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #ffffff;
+      padding: 12px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .result-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .result-title {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #1e3f3a;
+      font-weight: 800;
+    }
+
+    .result-file {
+      font-size: 0.82rem;
+      color: #4f605e;
+      background: #f4faf8;
+      border: 1px solid #dbe8e3;
+      border-radius: 999px;
+      padding: 4px 9px;
+    }
+
+    table.results {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+
+    .table-scroll {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .table-scroll table {
+      min-width: 560px;
+    }
+
+    .results th,
+    .results td {
+      border-bottom: 1px solid #e7efec;
+      text-align: left;
+      padding: 7px 6px;
+    }
+
+    .results th {
+      color: #2e4f4a;
+      font-size: 0.8rem;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+    }
+
+    .results tr:last-child td {
+      border-bottom: none;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(130px, 1fr));
+      gap: 10px;
+    }
+
+    .assessment-box {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #ffffff;
+      padding: 12px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .assessment-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      font-weight: 900;
+      width: fit-content;
+    }
+
+    .assessment-badge.alta {
+      color: #0f5132;
+      background: #e8f7ef;
+      border: 1px solid #b9e1c7;
+    }
+
+    .assessment-badge.media {
+      color: #7c5b09;
+      background: #fff8e1;
+      border: 1px solid #f0dea3;
+    }
+
+    .assessment-badge.baja {
+      color: #842029;
+      background: #fbe9ec;
+      border: 1px solid #efc6cd;
+    }
+
+    .assessment-text {
+      margin: 0;
+      color: #29403f;
+      line-height: 1.45;
+      font-size: 0.9rem;
+    }
+
+    .score-wrap {
+      display: grid;
+      gap: 6px;
+    }
+
+    .score-label {
+      margin: 0;
+      font-size: 0.8rem;
+      color: #385654;
+      font-weight: 800;
+    }
+
+    .score-bar {
+      width: 100%;
+      height: 12px;
+      border-radius: 999px;
+      background: #e6f0ed;
+      overflow: hidden;
+      border: 1px solid #cfe1db;
+    }
+
+    .score-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #ef4444, #f59e0b, #10b981);
+    }
+
+    .note-list {
+      margin: 0;
+      padding-left: 18px;
+      color: #455b59;
+      font-size: 0.88rem;
+      line-height: 1.4;
+    }
+
+    .note-list li { margin-bottom: 4px; }
+
+    .summary-card {
+      border: 1px solid #dbe8e3;
+      border-radius: 10px;
+      background: #f7fcfa;
+      padding: 9px 10px;
+    }
+
+    .summary-label {
+      margin: 0;
+      font-size: 0.78rem;
+      color: #516060;
+      text-transform: uppercase;
+      letter-spacing: 0.2px;
+      font-weight: 700;
+    }
+
+    .summary-value {
+      margin: 3px 0 0;
+      font-size: 1.02rem;
+      color: #173431;
+      font-weight: 800;
+    }
+
+    .history-box {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      padding: 12px;
+      display: grid;
+      gap: 9px;
+    }
+
+    .history-title {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #1e3f3a;
+      font-weight: 800;
+    }
+
+    table.history {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      table-layout: fixed;
+    }
+
+    .history th,
+    .history td {
+      border-bottom: 1px solid #e7efec;
+      text-align: left;
+      padding: 7px 6px;
+      vertical-align: top;
+    }
+
+    .history th {
+      color: #2e4f4a;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2px;
+    }
+
+    .history td {
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+
+    .viewer-box {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      padding: 12px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .viewer-title {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #1e3f3a;
+      font-weight: 800;
+    }
+
+    #viewer3d {
+      width: 100%;
+      height: 360px;
+      border: 1px solid #dbe8e3;
+      border-radius: 10px;
+      background: #f8fbff;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    #viewer3d canvas {
+      position: absolute !important;
+      inset: 0;
+      width: 100% !important;
+      height: 100% !important;
+      display: block;
+    }
+
+    .viewer-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .viewer-note {
+      margin: 0;
+      font-size: 0.86rem;
+      color: #4f605e;
+    }
+
+    .pose-picker {
+      max-width: 260px;
+      width: 100%;
+      border: 1px solid #cddbd5;
+      border-radius: 10px;
+      padding: 8px 10px;
+      background: #fff;
+      font-weight: 700;
+      color: #254643;
+    }
+
+    .actions-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .inline-form {
+      margin: 0;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border: 1px solid #b5ccc6;
+      background: #f2faf7;
+      color: #14544f;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      padding: 10px 14px;
+      border-radius: 11px;
+    }
+
+    .btn-secondary:hover {
+      background: #e6f6f2;
+    }
+
+    .ranking-box {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      padding: 12px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .mode-selector {
+      width: 100%;
+      border: 1px solid #cddbd5;
+      border-radius: 10px;
+      padding: 10px;
+      background: #fff;
+      font-weight: 700;
+      color: #254643;
+    }
+
     .form-grid { display: grid; gap: 12px; }
 
     .field {
@@ -171,6 +567,22 @@
       background: #fbfffe;
     }
 
+    input[type=text],
+    textarea {
+      width: 100%;
+      border: 1px solid #cddbd5;
+      border-radius: 10px;
+      padding: 9px;
+      background: #fff;
+      font: inherit;
+      color: #244643;
+    }
+
+    textarea {
+      min-height: 68px;
+      resize: vertical;
+    }
+
     .row {
       display: flex;
       align-items: center;
@@ -178,6 +590,24 @@
       color: #314a49;
       font-weight: 600;
       font-size: 0.92rem;
+    }
+
+    .checklist {
+      border: 1px solid #dbe8e3;
+      border-radius: 11px;
+      padding: 10px;
+      background: #f8fcfb;
+      display: grid;
+      gap: 7px;
+    }
+
+    .checklist-title {
+      margin: 0;
+      font-size: 0.84rem;
+      color: #2d4c49;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.2px;
     }
 
     .btn {
@@ -239,7 +669,7 @@
     @media (max-width: 900px) {
       .layout {
         grid-template-columns: 1fr;
-        max-width: 680px;
+        max-width: 760px;
       }
 
       .hero-kpis { grid-template-columns: repeat(3, 1fr); }
@@ -250,6 +680,9 @@
       .hero, .content, .guide { padding: 16px; }
       .subtitle { font-size: 0.92rem; }
       .hero-kpis { grid-template-columns: 1fr; }
+      .summary-grid { grid-template-columns: 1fr; }
+      #viewer3d { height: 280px; }
+      .table-scroll table { min-width: 520px; }
     }
   </style>
 </head>
@@ -267,34 +700,270 @@
       </header>
 
       <section class="content">
-        {% with messages = get_flashed_messages(with_categories=true) %}
-          {% if messages %}
-            <ul class="messages">
-              {% for category, msg in messages %}
-                <li class="msg {{ 'ok' if category == 'success' else 'err' }}">{{ msg }}</li>
+        <nav class="section-nav">
+          <a href="#sec-carga">1. Cargar y Ejecutar</a>
+          <a href="#sec-resumen">2. Resumen</a>
+          <a href="#sec-eval">3. Evaluacion Clinica</a>
+          <a href="#sec-resultados">4. Resultados</a>
+          <a href="#sec-historial">5. Historial</a>
+          <a href="#sec-ranking">6. Ranking</a>
+          <a href="#sec-visor">7. Visor 3D</a>
+        </nav>
+
+        {% if success_message %}
+          <ul class="messages">
+            <li class="msg ok">{{ success_message }}</li>
+          </ul>
+        {% endif %}
+        {% if error_message %}
+          <ul class="messages">
+            <li class="msg err">{{ error_message }}</li>
+          </ul>
+        {% endif %}
+
+        <section id="sec-carga" class="section-card">
+          <div class="section-head">
+            <h3 class="section-title">Paso 1. Carga de archivos y ejecucion</h3>
+            <span class="section-tag">Operacion principal</span>
+          </div>
+          <form method="post" enctype="multipart/form-data" class="form-grid">
+            <input type="hidden" name="action" value="run">
+            <div class="field">
+              <label>Receptor (.pdb o .pdbqt)</label>
+              <input type="file" name="receptor" required>
+            </div>
+
+            <div class="field">
+              <label>Ligando (.pdb o .pdbqt)</label>
+              <input type="file" name="ligand" required>
+            </div>
+
+            <label class="row">
+              <input type="checkbox" name="skip_prepare" {% if skip_prepare_value %}checked{% endif %}>
+              Saltar preparacion (solo si ambos archivos ya estan en .pdbqt)
+            </label>
+
+            <div class="checklist">
+              <p class="checklist-title">Checklist de seguridad antes de docking</p>
+              <label class="row">
+                <input type="checkbox" name="check_inputs" {% if checklist_state.check_inputs %}checked{% endif %}>
+                Verifique que receptor y ligando corresponden al caso correcto.
+              </label>
+              <label class="row">
+                <input type="checkbox" name="check_grid" {% if checklist_state.check_grid %}checked{% endif %}>
+                Confirme que el grid de docking corresponde al sitio de interes.
+              </label>
+              <label class="row">
+                <input type="checkbox" name="check_interpretation" {% if checklist_state.check_interpretation %}checked{% endif %}>
+                Entiendo que el resultado es orientativo y requiere validacion experimental.
+              </label>
+            </div>
+
+            <div class="field">
+              <label>ID de caso clinico</label>
+              <input type="text" name="case_id" value="{{ case_id_value|default('') }}" placeholder="Ej: DOC-2026-001">
+            </div>
+
+            <div class="field">
+              <label>Objetivo clinico-tecnico</label>
+              <textarea name="clinical_goal" placeholder="Ej: evaluar union preliminar para cribado inicial">{{ clinical_goal_value|default('') }}</textarea>
+            </div>
+
+            <div class="field">
+              <label>Modo de trabajo</label>
+              <select class="mode-selector" name="run_mode">
+                <option value="dock" {% if run_mode_value == 'dock' %}selected{% endif %}>Docking completo (preparar + correr + analizar)</option>
+                <option value="prepare" {% if run_mode_value == 'prepare' %}selected{% endif %}>Solo preparar archivos PDBQT</option>
+              </select>
+            </div>
+
+            <button class="btn" type="submit">Ejecutar Docking</button>
+          </form>
+        </section>
+
+        {% if summary %}
+          <section id="sec-resumen" class="result-box section-card">
+            <div class="section-head">
+              <h3 class="section-title">Paso 2. Resumen clinico-tecnico</h3>
+              <span class="section-tag">Lectura rapida</span>
+            </div>
+            <div class="summary-grid">
+              <article class="summary-card">
+                <p class="summary-label">Mejor modo</p>
+                <p class="summary-value">{{ summary.best_mode }}</p>
+              </article>
+              <article class="summary-card">
+                <p class="summary-label">Mejor afinidad</p>
+                <p class="summary-value">{{ '%.4f'|format(summary.best_affinity) }} kcal/mol</p>
+              </article>
+              <article class="summary-card">
+                <p class="summary-label">Poses evaluadas</p>
+                <p class="summary-value">{{ summary.num_modes }}</p>
+              </article>
+            </div>
+          </section>
+        {% endif %}
+
+        {% if clinical_assessment %}
+          <section id="sec-eval" class="assessment-box section-card">
+            <div class="section-head">
+              <h3 class="section-title">Paso 3. Evaluacion clinica automatica</h3>
+              <span class="section-tag">Soporte a decision</span>
+            </div>
+            <span class="assessment-badge {{ clinical_assessment.level }}">Nivel {{ clinical_assessment.level|upper }}</span>
+            <p class="assessment-text"><strong>{{ clinical_assessment.headline }}</strong></p>
+            <p class="assessment-text">Mejor afinidad: <strong>{{ '%.4f'|format(clinical_assessment.best_affinity) }} kcal/mol</strong></p>
+            <p class="assessment-text">Diferencia entre MODE 1 y MODE 2: <strong>{{ '%.4f'|format(clinical_assessment.delta12) }}</strong></p>
+            <div class="score-wrap">
+              <p class="score-label">Indice de calidad orientativo: {{ '%.1f'|format(clinical_assessment.quality_score) }} / 100</p>
+              <div class="score-bar">
+                <div class="score-fill" style="width: {{ '%.1f'|format(clinical_assessment.quality_score) }}%;"></div>
+              </div>
+            </div>
+            <p class="assessment-text">{{ clinical_assessment.consistency }}</p>
+            <p class="assessment-text">Recomendacion: {{ clinical_assessment.guidance }}</p>
+            <ul class="note-list">
+              {% for note in clinical_assessment.notes %}
+                <li>{{ note }}</li>
               {% endfor %}
             </ul>
-          {% endif %}
-        {% endwith %}
+          </section>
+        {% endif %}
 
-        <form method="post" enctype="multipart/form-data" class="form-grid">
-          <div class="field">
-            <label>Receptor (.pdb o .pdbqt)</label>
-            <input type="file" name="receptor" required>
-          </div>
+        {% if result_rows %}
+          <section id="sec-resultados" class="result-box section-card">
+            <div class="section-head">
+              <h3 class="section-title">Paso 4. Tabla de resultados del docking</h3>
+              <span class="section-tag">Detalle por pose</span>
+              {% if output_filename %}
+                <span class="result-file">Archivo: {{ output_filename }}</span>
+              {% endif %}
+            </div>
+            <div class="table-scroll">
+              <table class="results">
+                <thead>
+                  <tr>
+                    <th>Mode</th>
+                    <th>Affinity (kcal/mol)</th>
+                    <th>RMSD l.b.</th>
+                    <th>RMSD u.b.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for row in result_rows %}
+                    <tr>
+                      <td>{{ row.mode }}</td>
+                      <td>{{ '%.4f'|format(row.affinity) }}</td>
+                      <td>{{ '%.3f'|format(row.rmsd_lb) }}</td>
+                      <td>{{ '%.3f'|format(row.rmsd_ub) }}</td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        {% endif %}
 
-          <div class="field">
-            <label>Ligando (.pdb o .pdbqt)</label>
-            <input type="file" name="ligand" required>
-          </div>
+        {% if history_records %}
+          <section id="sec-historial" class="history-box section-card">
+            <div class="section-head">
+              <h3 class="section-title">Paso 5. Historial de corridas</h3>
+              <span class="section-tag">Trazabilidad</span>
+            </div>
+            <div class="table-scroll">
+              <table class="history">
+                <thead>
+                  <tr>
+                    <th>Fecha</th>
+                    <th>Caso</th>
+                    <th>Operacion</th>
+                    <th>Receptor</th>
+                    <th>Ligando</th>
+                    <th>Mejor afinidad</th>
+                    <th>Salida</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for item in history_records %}
+                    <tr>
+                      <td>{{ item.timestamp }}</td>
+                      <td>{{ item.case_id or '-' }}</td>
+                      <td>{{ item.mode }}</td>
+                      <td>{{ item.receptor }}</td>
+                      <td>{{ item.ligand }}</td>
+                      <td>
+                        {% if item.best_affinity is not none %}
+                          {{ '%.4f'|format(item.best_affinity) }}
+                        {% else %}
+                          -
+                        {% endif %}
+                      </td>
+                      <td>{{ item.output or '-' }}</td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+            <div class="actions-row">
+              <a class="btn-secondary" href="/report/latest{% if case_id_value %}?case={{ case_id_value }}{% endif %}">Reporte TXT</a>
+              <a class="btn-secondary" href="/report/latest/html{% if case_id_value %}?case={{ case_id_value }}{% endif %}">Reporte HTML imprimible</a>
+              <a class="btn-secondary" href="/report/latest/json{% if case_id_value %}?case={{ case_id_value }}{% endif %}">Reporte JSON auditoria</a>
+              <form method="post" class="inline-form">
+                <input type="hidden" name="action" value="clear_history">
+                <button class="btn-secondary" type="submit">Limpiar historial</button>
+              </form>
+            </div>
+          </section>
+        {% endif %}
 
-          <label class="row">
-            <input type="checkbox" name="skip_prepare">
-            Saltar preparacion (solo si ambos archivos ya estan en .pdbqt)
-          </label>
+        {% if ligand_ranking %}
+          <section id="sec-ranking" class="ranking-box section-card">
+            <div class="section-head">
+              <h3 class="section-title">Paso 6. Ranking de ligandos</h3>
+              <span class="section-tag">Comparativo</span>
+            </div>
+            <div class="table-scroll">
+              <table class="results">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Ligando</th>
+                    <th>Mejor afinidad (kcal/mol)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for item in ligand_ranking %}
+                    <tr>
+                      <td>{{ loop.index }}</td>
+                      <td>{{ item.ligand }}</td>
+                      <td>{{ '%.4f'|format(item.best_affinity) }}</td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        {% endif %}
 
-          <button class="btn" type="submit">Ejecutar Docking</button>
-        </form>
+        {% if receptor_text and docked_text %}
+          <section id="sec-visor" class="viewer-box section-card">
+            <div class="section-head">
+              <h3 class="section-title">Paso 7. Vista 3D del docking</h3>
+              <span class="section-tag">Analisis visual</span>
+            </div>
+            <div class="viewer-toolbar">
+              <p class="viewer-note">Selecciona una pose para compararla sobre el receptor.</p>
+              {% if pose_models %}
+                <select id="posePicker" class="pose-picker">
+                  {% for model in pose_models %}
+                    <option value="{{ loop.index0 }}">MODE {{ loop.index }}</option>
+                  {% endfor %}
+                </select>
+              {% endif %}
+            </div>
+            <div id="viewer3d"></div>
+          </section>
+        {% endif %}
       </section>
 
       <section class="guide">
@@ -311,7 +980,7 @@
 
     <aside class="panel" style="padding:20px; align-self:start; animation: rise .42s ease-out;">
       <h2 style="margin:0 0 8px; font-family:'Palatino Linotype','Book Antiqua',Palatino,serif; color:#1d3a37;">Interpretacion rapida</h2>
-      <p style="margin:0 0 14px; color:#50635f; line-height:1.45;">El archivo .log muestra la tabla de modos. En general, una afinidad mas negativa indica union mas favorable.</p>
+      <p style="margin:0 0 14px; color:#50635f; line-height:1.45;">La web resume automaticamente los modos, afinidades y estabilidad entre poses para lectura rapida del doctor.</p>
       <div style="display:grid; gap:10px;">
         <div style="border:1px solid var(--line); border-radius:10px; padding:10px; background:#fff;">
           <strong style="display:block; margin-bottom:4px; color:#20433f;">mode 1</strong>
@@ -329,5 +998,70 @@
       <p style="margin:14px 0 0; color:#4f605e; font-size:.88rem;">Consejo: valida visualmente en PMV que el ligando quede dentro de la cavidad objetivo.</p>
     </aside>
   </main>
+  <script src="https://unpkg.com/3dmol/build/3Dmol-min.js"></script>
+  <script>
+    (function () {
+      const receptorText = {{ receptor_text|tojson }};
+      const dockedText = {{ docked_text|tojson }};
+      const poseModels = {{ pose_models|tojson }};
+      const container = document.getElementById("viewer3d");
+      if (!container || !receptorText || !dockedText || !window.$3Dmol) {
+        return;
+      }
+
+      const viewer = $3Dmol.createViewer(container, { backgroundColor: "#f8fbff" });
+      viewer.addModel(receptorText, "pdbqt");
+      viewer.setStyle({ model: 0 }, { cartoon: { color: "#4a8f85" }, stick: { radius: 0.09, colorscheme: "greenCarbon" } });
+
+      const ligandModels = [];
+      if (Array.isArray(poseModels) && poseModels.length > 0) {
+        poseModels.forEach((modelText) => {
+          ligandModels.push(viewer.addModel(modelText, "pdbqt"));
+        });
+      } else {
+        ligandModels.push(viewer.addModel(dockedText, "pdbqt"));
+      }
+
+      ligandModels.forEach((_, idx) => {
+        viewer.setStyle({ model: idx + 1 }, {});
+      });
+
+      const showPose = (index) => {
+        ligandModels.forEach((_, idx) => {
+          if (idx === index) {
+            viewer.setStyle(
+              { model: idx + 1 },
+              { stick: { radius: 0.2, colorscheme: "orangeCarbon" }, sphere: { scale: 0.22, colorscheme: "orangeCarbon" } }
+            );
+          } else {
+            viewer.setStyle({ model: idx + 1 }, {});
+          }
+        });
+        viewer.zoomTo({ model: [0, index + 1] });
+        viewer.zoom(1.08);
+        viewer.center({ model: [0, index + 1] });
+        viewer.render();
+      };
+
+      const picker = document.getElementById("posePicker");
+      if (picker) {
+        picker.addEventListener("change", () => {
+          const index = Number.parseInt(picker.value, 10);
+          showPose(Number.isNaN(index) ? 0 : index);
+        });
+      }
+
+      const refreshViewer = () => {
+        viewer.resize();
+        showPose(0);
+      };
+
+      requestAnimationFrame(refreshViewer);
+      window.addEventListener("resize", () => {
+        viewer.resize();
+        viewer.render();
+      });
+    })();
+  </script>
 </body>
 </html>

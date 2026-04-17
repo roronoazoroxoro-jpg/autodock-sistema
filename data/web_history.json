@@ -1,0 +1,70 @@
+[
+  {
+    "timestamp": "2026-04-17 00:44:36",
+    "mode": "docking",
+    "case_id": "",
+    "clinical_goal": "",
+    "receptor": "receptor.pdbqt",
+    "ligand": "ligand.pdbqt",
+    "output": "docked_receptor_ligand.pdbqt",
+    "best_affinity": -0.975
+  },
+  {
+    "timestamp": "2026-04-17 00:12:01",
+    "mode": "docking",
+    "case_id": "DOC-2026-100",
+    "clinical_goal": "Cribado inicial",
+    "receptor": "receptor.pdbqt",
+    "ligand": "ligand.pdbqt",
+    "output": "docked_receptor_ligand.pdbqt",
+    "best_affinity": -0.975
+  },
+  {
+    "timestamp": "2026-04-17 00:09:30",
+    "mode": "docking",
+    "receptor": "receptor.pdbqt",
+    "ligand": "ligand.pdbqt",
+    "output": "docked_receptor_ligand.pdbqt",
+    "best_affinity": -0.975
+  },
+  {
+    "timestamp": "2026-04-17 00:06:10",
+    "mode": "docking",
+    "receptor": "receptor.pdbqt",
+    "ligand": "ligand.pdbqt",
+    "output": "docked_receptor_ligand.pdbqt",
+    "best_affinity": -0.973
+  },
+  {
+    "timestamp": "2026-04-17 00:03:39",
+    "mode": "docking",
+    "receptor": "receptor.pdbqt",
+    "ligand": "ligand.pdbqt",
+    "output": "docked_receptor_ligand.pdbqt",
+    "best_affinity": -0.974
+  },
+  {
+    "timestamp": "2026-04-17 00:03:33",
+    "mode": "docking",
+    "receptor": "receptor.pdbqt",
+    "ligand": "ligand.pdbqt",
+    "output": "docked_receptor_ligand.pdbqt",
+    "best_affinity": -0.973
+  },
+  {
+    "timestamp": "2026-04-16 23:59:51",
+    "mode": "docking",
+    "receptor": "receptor.pdbqt",
+    "ligand": "ligand.pdbqt",
+    "output": "docked_receptor_ligand.pdbqt",
+    "best_affinity": -0.973
+  },
+  {
+    "timestamp": "2026-04-16 23:59:27",
+    "mode": "docking",
+    "receptor": "receptor.pdbqt",
+    "ligand": "ligand.pdbqt",
+    "output": "docked_receptor_ligand.pdbqt",
+    "best_affinity": -0.975
+  }
+]

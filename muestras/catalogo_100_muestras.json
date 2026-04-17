@@ -1,0 +1,1002 @@
+[
+    {
+        "id":  "M001",
+        "categoria":  "Vitaminas",
+        "receptor_sugerido":  "VDR (receptor de vitamina D)",
+        "tipo_receptor":  "Receptor nuclear",
+        "ligando_sugerido":  "Calcitriol",
+        "tipo_ligando":  "Vitamina",
+        "objetivo_de_prueba":  "hormona y vitamina liposoluble",
+        "nota_clinico_tecnica":  "union vitamina-receptor para pruebas endocrinas"
+    },
+    {
+        "id":  "M002",
+        "categoria":  "Vitaminas",
+        "receptor_sugerido":  "RXR alfa",
+        "tipo_receptor":  "Receptor nuclear",
+        "ligando_sugerido":  "Acido retinoico",
+        "tipo_ligando":  "Vitamina/retinoide",
+        "objetivo_de_prueba":  "modulacion transcripcional",
+        "nota_clinico_tecnica":  "prueba clasica de retinoides"
+    },
+    {
+        "id":  "M003",
+        "categoria":  "Vitaminas",
+        "receptor_sugerido":  "Transtiretina",
+        "tipo_receptor":  "Proteina transportadora",
+        "ligando_sugerido":  "Retinol",
+        "tipo_ligando":  "Vitamina",
+        "objetivo_de_prueba":  "union de transporte",
+        "nota_clinico_tecnica":  "util para vitamina A y proteinas transportadoras"
+    },
+    {
+        "id":  "M004",
+        "categoria":  "Vitaminas",
+        "receptor_sugerido":  "Albumina serica humana",
+        "tipo_receptor":  "Proteina transportadora",
+        "ligando_sugerido":  "Vitamina K1",
+        "tipo_ligando":  "Vitamina",
+        "objetivo_de_prueba":  "union plasm�tica",
+        "nota_clinico_tecnica":  "estudio simple de transporte"
+    },
+    {
+        "id":  "M005",
+        "categoria":  "Vitaminas",
+        "receptor_sugerido":  "PPAR gamma",
+        "tipo_receptor":  "Receptor nuclear",
+        "ligando_sugerido":  "Alfa-tocoferol",
+        "tipo_ligando":  "Vitamina",
+        "objetivo_de_prueba":  "metabolismo lipido",
+        "nota_clinico_tecnica":  "prueba de vitamina E como compuesto hidrofobico"
+    },
+    {
+        "id":  "M006",
+        "categoria":  "Vitaminas",
+        "receptor_sugerido":  "Carbonic anhydrase II",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Riboflavina",
+        "tipo_ligando":  "Vitamina",
+        "objetivo_de_prueba":  "interaccion enzima-vitamina",
+        "nota_clinico_tecnica":  "estudio exploratorio"
+    },
+    {
+        "id":  "M007",
+        "categoria":  "Vitaminas",
+        "receptor_sugerido":  "Acetilcolinesterasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Tiamina",
+        "tipo_ligando":  "Vitamina",
+        "objetivo_de_prueba":  "prueba neurometabolica",
+        "nota_clinico_tecnica":  "ligando peque�o de prueba"
+    },
+    {
+        "id":  "M008",
+        "categoria":  "Vitaminas",
+        "receptor_sugerido":  "Dihidrofolato reductasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Acido folico",
+        "tipo_ligando":  "Vitamina/cofactor",
+        "objetivo_de_prueba":  "union a enzima folato",
+        "nota_clinico_tecnica":  "clasico para evaluar pocket de folatos"
+    },
+    {
+        "id":  "M009",
+        "categoria":  "Vitaminas",
+        "receptor_sugerido":  "Biotin carboxylase",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Biotina",
+        "tipo_ligando":  "Vitamina/cofactor",
+        "objetivo_de_prueba":  "union cofactor-enzima",
+        "nota_clinico_tecnica":  "ensayo de alta especificidad"
+    },
+    {
+        "id":  "M010",
+        "categoria":  "Vitaminas",
+        "receptor_sugerido":  "VDR (receptor de vitamina D)",
+        "tipo_receptor":  "Receptor nuclear",
+        "ligando_sugerido":  "Calcifediol",
+        "tipo_ligando":  "Vitamina",
+        "objetivo_de_prueba":  "comparacion con calcitriol",
+        "nota_clinico_tecnica":  "util para comparar analogos"
+    },
+    {
+        "id":  "M011",
+        "categoria":  "Productos naturales",
+        "receptor_sugerido":  "ACE2",
+        "tipo_receptor":  "Enzima de membrana",
+        "ligando_sugerido":  "Quercetina",
+        "tipo_ligando":  "Flavonoide",
+        "objetivo_de_prueba":  "union exploratoria",
+        "nota_clinico_tecnica":  "compuesto natural muy usado en docking"
+    },
+    {
+        "id":  "M012",
+        "categoria":  "Productos naturales",
+        "receptor_sugerido":  "COX-2",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Curcumina",
+        "tipo_ligando":  "Polifenol",
+        "objetivo_de_prueba":  "prueba antiinflamatoria",
+        "nota_clinico_tecnica":  "caso comun de productos naturales"
+    },
+    {
+        "id":  "M013",
+        "categoria":  "Productos naturales",
+        "receptor_sugerido":  "MAO-B",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Resveratrol",
+        "tipo_ligando":  "Polifenol",
+        "objetivo_de_prueba":  "prueba neurologica",
+        "nota_clinico_tecnica":  "compuesto antioxidante conocido"
+    },
+    {
+        "id":  "M014",
+        "categoria":  "Productos naturales",
+        "receptor_sugerido":  "Aromatasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Genisteina",
+        "tipo_ligando":  "Isoflavona",
+        "objetivo_de_prueba":  "prueba endocrina",
+        "nota_clinico_tecnica":  "ligando vegetal tipo fitoestrogeno"
+    },
+    {
+        "id":  "M015",
+        "categoria":  "Productos naturales",
+        "receptor_sugerido":  "EGFR quinasa",
+        "tipo_receptor":  "Quinasa",
+        "ligando_sugerido":  "EGCG",
+        "tipo_ligando":  "Polifenol",
+        "objetivo_de_prueba":  "prueba oncol�gica",
+        "nota_clinico_tecnica":  "compuesto de te verde"
+    },
+    {
+        "id":  "M016",
+        "categoria":  "Productos naturales",
+        "receptor_sugerido":  "BACE1",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Cafeina",
+        "tipo_ligando":  "Alcaloide",
+        "objetivo_de_prueba":  "union exploratoria",
+        "nota_clinico_tecnica":  "ligando peque�o muy conocido"
+    },
+    {
+        "id":  "M017",
+        "categoria":  "Productos naturales",
+        "receptor_sugerido":  "Acetilcolinesterasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Nicotina",
+        "tipo_ligando":  "Alcaloide",
+        "objetivo_de_prueba":  "prueba neurofarmacologica",
+        "nota_clinico_tecnica":  "ligando peque�o rapido de evaluar"
+    },
+    {
+        "id":  "M018",
+        "categoria":  "Productos naturales",
+        "receptor_sugerido":  "PDE5",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Capsaicina",
+        "tipo_ligando":  "Producto natural",
+        "objetivo_de_prueba":  "prueba de bolsillo hidrofobico",
+        "nota_clinico_tecnica":  "interes en se�alizacion vascular"
+    },
+    {
+        "id":  "M019",
+        "categoria":  "Productos naturales",
+        "receptor_sugerido":  "Xantina oxidasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Luteolina",
+        "tipo_ligando":  "Flavonoide",
+        "objetivo_de_prueba":  "prueba antioxidante",
+        "nota_clinico_tecnica":  "objetivo en metabolismo purinas"
+    },
+    {
+        "id":  "M020",
+        "categoria":  "Productos naturales",
+        "receptor_sugerido":  "Tirosinasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Kaempferol",
+        "tipo_ligando":  "Flavonoide",
+        "objetivo_de_prueba":  "prueba dermatologica",
+        "nota_clinico_tecnica":  "enzima frecuente en docking cosmetico"
+    },
+    {
+        "id":  "M021",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "Albumina serica humana",
+        "tipo_receptor":  "Proteina transportadora",
+        "ligando_sugerido":  "Paracetamol",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "union plasm�tica",
+        "nota_clinico_tecnica":  "prueba simple de transporte y afinidad"
+    },
+    {
+        "id":  "M022",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "COX-2",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Ibuprofeno",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "antiinflamatorio cl�sico",
+        "nota_clinico_tecnica":  "ideal como caso de prueba rapido"
+    },
+    {
+        "id":  "M023",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "COX-2",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Naproxeno",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "antiinflamatorio cl�sico",
+        "nota_clinico_tecnica":  "comparacion con otros AINEs"
+    },
+    {
+        "id":  "M024",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "Acetilcolinesterasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Donepezilo",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo neurologico",
+        "nota_clinico_tecnica":  "ligando clasico en Alzheimer"
+    },
+    {
+        "id":  "M025",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "BACE1",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Memantina",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "prueba neurologica",
+        "nota_clinico_tecnica":  "exploratorio para bolsillo enzimatica"
+    },
+    {
+        "id":  "M026",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "Aromatasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Letrozol",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo endocrino",
+        "nota_clinico_tecnica":  "onco-endocrinologia"
+    },
+    {
+        "id":  "M027",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "Receptor de androgenos",
+        "tipo_receptor":  "Receptor nuclear",
+        "ligando_sugerido":  "Flutamida",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo hormonal",
+        "nota_clinico_tecnica":  "comparacion antiandrogenica"
+    },
+    {
+        "id":  "M028",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "ER alfa",
+        "tipo_receptor":  "Receptor nuclear",
+        "ligando_sugerido":  "Tamoxifeno",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo hormonal",
+        "nota_clinico_tecnica":  "onco-endocrinologia mamaria"
+    },
+    {
+        "id":  "M029",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "EGFR quinasa",
+        "tipo_receptor":  "Quinasa",
+        "ligando_sugerido":  "Erlotinib",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo oncol�gico",
+        "nota_clinico_tecnica":  "caso muy comun en docking de quinasas"
+    },
+    {
+        "id":  "M030",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "HIV proteasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Lopinavir",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antiviral",
+        "nota_clinico_tecnica":  "prueba clasica de antivirales"
+    },
+    {
+        "id":  "M031",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "Neuraminidasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Oseltamivir",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antiviral",
+        "nota_clinico_tecnica":  "caso didactico influenza"
+    },
+    {
+        "id":  "M032",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "Dihidrofolato reductasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Metotrexato",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antimetabolito",
+        "nota_clinico_tecnica":  "prueba fuerte de union a folatos"
+    },
+    {
+        "id":  "M033",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "Carbonic anhydrase II",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Acetazolamida",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo enzimatico",
+        "nota_clinico_tecnica":  "caso frecuente de inhibicion enzimatica"
+    },
+    {
+        "id":  "M034",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "PDE5",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Sildenafil",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo vascular",
+        "nota_clinico_tecnica":  "ligando muy conocido"
+    },
+    {
+        "id":  "M035",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "DPP-4",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Sitagliptina",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo diabetologico",
+        "nota_clinico_tecnica":  "prueba metabolica moderna"
+    },
+    {
+        "id":  "M036",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "HMG-CoA reductasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Atorvastatina",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo cardiometabolico",
+        "nota_clinico_tecnica":  "caso util para estatinas"
+    },
+    {
+        "id":  "M037",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "ACE",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Enalaprilato",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo cardiovascular",
+        "nota_clinico_tecnica":  "prueba clasica de inhibidores ECA"
+    },
+    {
+        "id":  "M038",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "Renina",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Aliskiren",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo cardiovascular",
+        "nota_clinico_tecnica":  "modelo del eje renina-angiotensina"
+    },
+    {
+        "id":  "M039",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "Mpro SARS-CoV-2",
+        "tipo_receptor":  "Proteasa",
+        "ligando_sugerido":  "Nirmatrelvir",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antiviral",
+        "nota_clinico_tecnica":  "caso moderno muy util"
+    },
+    {
+        "id":  "M040",
+        "categoria":  "Farmacos",
+        "receptor_sugerido":  "RdRp viral",
+        "tipo_receptor":  "Polimerasa",
+        "ligando_sugerido":  "Remdesivir",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antiviral",
+        "nota_clinico_tecnica":  "prueba de polimerasa viral"
+    },
+    {
+        "id":  "M041",
+        "categoria":  "Antivirales",
+        "receptor_sugerido":  "Spike RBD",
+        "tipo_receptor":  "Proteina viral",
+        "ligando_sugerido":  "Quercetina",
+        "tipo_ligando":  "Flavonoide",
+        "objetivo_de_prueba":  "union exploratoria viral",
+        "nota_clinico_tecnica":  "estudio exploratorio no confirmatorio"
+    },
+    {
+        "id":  "M042",
+        "categoria":  "Antivirales",
+        "receptor_sugerido":  "Mpro SARS-CoV-2",
+        "tipo_receptor":  "Proteasa",
+        "ligando_sugerido":  "Quercetina",
+        "tipo_ligando":  "Flavonoide",
+        "objetivo_de_prueba":  "union exploratoria viral",
+        "nota_clinico_tecnica":  "prueba natural contra proteasa viral"
+    },
+    {
+        "id":  "M043",
+        "categoria":  "Antivirales",
+        "receptor_sugerido":  "Mpro SARS-CoV-2",
+        "tipo_receptor":  "Proteasa",
+        "ligando_sugerido":  "Baicaleina",
+        "tipo_ligando":  "Flavonoide",
+        "objetivo_de_prueba":  "union exploratoria viral",
+        "nota_clinico_tecnica":  "polifenol frecuente en literatura"
+    },
+    {
+        "id":  "M044",
+        "categoria":  "Antivirales",
+        "receptor_sugerido":  "Spike RBD",
+        "tipo_receptor":  "Proteina viral",
+        "ligando_sugerido":  "Hesperidina",
+        "tipo_ligando":  "Flavonoide",
+        "objetivo_de_prueba":  "union exploratoria viral",
+        "nota_clinico_tecnica":  "ligando natural grande y flexible"
+    },
+    {
+        "id":  "M045",
+        "categoria":  "Antivirales",
+        "receptor_sugerido":  "HIV integrasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Raltegravir",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antiviral",
+        "nota_clinico_tecnica":  "prueba antirretroviral util"
+    },
+    {
+        "id":  "M046",
+        "categoria":  "Antivirales",
+        "receptor_sugerido":  "HCV NS3 proteasa",
+        "tipo_receptor":  "Proteasa",
+        "ligando_sugerido":  "Simeprevir",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antiviral",
+        "nota_clinico_tecnica":  "caso hepatitis C"
+    },
+    {
+        "id":  "M047",
+        "categoria":  "Antivirales",
+        "receptor_sugerido":  "HCV NS5B polimerasa",
+        "tipo_receptor":  "Polimerasa",
+        "ligando_sugerido":  "Sofosbuvir",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antiviral",
+        "nota_clinico_tecnica":  "prueba de polimerasa viral"
+    },
+    {
+        "id":  "M048",
+        "categoria":  "Antivirales",
+        "receptor_sugerido":  "Neuraminidasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Zanamivir",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antiviral",
+        "nota_clinico_tecnica":  "comparacion con oseltamivir"
+    },
+    {
+        "id":  "M049",
+        "categoria":  "Antivirales",
+        "receptor_sugerido":  "HIV proteasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Atazanavir",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antiviral",
+        "nota_clinico_tecnica":  "segundo caso para comparacion"
+    },
+    {
+        "id":  "M050",
+        "categoria":  "Antivirales",
+        "receptor_sugerido":  "Influenza endonucleasa PA",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Baloxavir",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antiviral",
+        "nota_clinico_tecnica":  "prueba de inhibidor moderno"
+    },
+    {
+        "id":  "M051",
+        "categoria":  "Antibacterianos",
+        "receptor_sugerido":  "DNA girasa bacteriana",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Ciprofloxacino",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antibacteriano",
+        "nota_clinico_tecnica":  "caso clasico de girasa"
+    },
+    {
+        "id":  "M052",
+        "categoria":  "Antibacterianos",
+        "receptor_sugerido":  "DHPS",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Sulfametoxazol",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antibacteriano",
+        "nota_clinico_tecnica":  "via del folato bacteriano"
+    },
+    {
+        "id":  "M053",
+        "categoria":  "Antibacterianos",
+        "receptor_sugerido":  "PBP bacteriana",
+        "tipo_receptor":  "Enzima de pared celular",
+        "ligando_sugerido":  "Amoxicilina",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antibacteriano",
+        "nota_clinico_tecnica":  "prueba sobre diana de beta-lactamicos"
+    },
+    {
+        "id":  "M054",
+        "categoria":  "Antibacterianos",
+        "receptor_sugerido":  "Dihidrofolato reductasa bacteriana",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Trimetoprim",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antibacteriano",
+        "nota_clinico_tecnica":  "caso muy clasico y util"
+    },
+    {
+        "id":  "M055",
+        "categoria":  "Antibacterianos",
+        "receptor_sugerido":  "DNA girasa bacteriana",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Levofloxacino",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antibacteriano",
+        "nota_clinico_tecnica":  "comparacion con ciprofloxacino"
+    },
+    {
+        "id":  "M056",
+        "categoria":  "Antibacterianos",
+        "receptor_sugerido":  "Topoisomerasa IV",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Moxifloxacino",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antibacteriano",
+        "nota_clinico_tecnica":  "prueba de quinolonas"
+    },
+    {
+        "id":  "M057",
+        "categoria":  "Antibacterianos",
+        "receptor_sugerido":  "FabI",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Triclosan",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antibacteriano",
+        "nota_clinico_tecnica":  "ensayo en biosintesis lipidos"
+    },
+    {
+        "id":  "M058",
+        "categoria":  "Antibacterianos",
+        "receptor_sugerido":  "Beta-lactamasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Clavulanato",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antibacteriano",
+        "nota_clinico_tecnica":  "prueba sobre resistencia"
+    },
+    {
+        "id":  "M059",
+        "categoria":  "Antibacterianos",
+        "receptor_sugerido":  "RNA polimerasa bacteriana",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Rifampicina",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antibacteriano",
+        "nota_clinico_tecnica":  "caso antimicrobiano util"
+    },
+    {
+        "id":  "M060",
+        "categoria":  "Antibacterianos",
+        "receptor_sugerido":  "MurA",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Fosfomicina",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antibacteriano",
+        "nota_clinico_tecnica":  "caso pared bacteriana"
+    },
+    {
+        "id":  "M061",
+        "categoria":  "Oncologia",
+        "receptor_sugerido":  "VEGFR2",
+        "tipo_receptor":  "Quinasa",
+        "ligando_sugerido":  "Sorafenib",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo oncol�gico",
+        "nota_clinico_tecnica":  "prueba quinasa antiangiogenica"
+    },
+    {
+        "id":  "M062",
+        "categoria":  "Oncologia",
+        "receptor_sugerido":  "BRAF V600E",
+        "tipo_receptor":  "Quinasa",
+        "ligando_sugerido":  "Vemurafenib",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo oncol�gico",
+        "nota_clinico_tecnica":  "modelo de quinasa mutada"
+    },
+    {
+        "id":  "M063",
+        "categoria":  "Oncologia",
+        "receptor_sugerido":  "MEK1",
+        "tipo_receptor":  "Quinasa",
+        "ligando_sugerido":  "Trametinib",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo oncol�gico",
+        "nota_clinico_tecnica":  "cascada MAPK"
+    },
+    {
+        "id":  "M064",
+        "categoria":  "Oncologia",
+        "receptor_sugerido":  "PI3K alfa",
+        "tipo_receptor":  "Quinasa",
+        "ligando_sugerido":  "Alpelisib",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo oncol�gico",
+        "nota_clinico_tecnica":  "via PI3K-AKT"
+    },
+    {
+        "id":  "M065",
+        "categoria":  "Oncologia",
+        "receptor_sugerido":  "mTOR",
+        "tipo_receptor":  "Quinasa",
+        "ligando_sugerido":  "Everolimus",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo oncol�gico y metabolico",
+        "nota_clinico_tecnica":  "via crecimiento celular"
+    },
+    {
+        "id":  "M066",
+        "categoria":  "Oncologia",
+        "receptor_sugerido":  "PARP1",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Olaparib",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo oncol�gico",
+        "nota_clinico_tecnica":  "reparacion de ADN"
+    },
+    {
+        "id":  "M067",
+        "categoria":  "Oncologia",
+        "receptor_sugerido":  "CDK4/6",
+        "tipo_receptor":  "Quinasa",
+        "ligando_sugerido":  "Palbociclib",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo oncol�gico",
+        "nota_clinico_tecnica":  "ciclo celular"
+    },
+    {
+        "id":  "M068",
+        "categoria":  "Oncologia",
+        "receptor_sugerido":  "BTK",
+        "tipo_receptor":  "Quinasa",
+        "ligando_sugerido":  "Ibrutinib",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo oncohematologico",
+        "nota_clinico_tecnica":  "caso de quinasa covalente"
+    },
+    {
+        "id":  "M069",
+        "categoria":  "Oncologia",
+        "receptor_sugerido":  "JAK2",
+        "tipo_receptor":  "Quinasa",
+        "ligando_sugerido":  "Ruxolitinib",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo oncohematologico",
+        "nota_clinico_tecnica":  "via JAK-STAT"
+    },
+    {
+        "id":  "M070",
+        "categoria":  "Oncologia",
+        "receptor_sugerido":  "ALK",
+        "tipo_receptor":  "Quinasa",
+        "ligando_sugerido":  "Crizotinib",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo oncol�gico",
+        "nota_clinico_tecnica":  "otro caso util de quinasa"
+    },
+    {
+        "id":  "M071",
+        "categoria":  "Neurologia",
+        "receptor_sugerido":  "MAO-B",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Selegilina",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo neurologico",
+        "nota_clinico_tecnica":  "parkinson y monoaminas"
+    },
+    {
+        "id":  "M072",
+        "categoria":  "Neurologia",
+        "receptor_sugerido":  "COMT",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Entacapona",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo neurologico",
+        "nota_clinico_tecnica":  "parkinson y catecolaminas"
+    },
+    {
+        "id":  "M073",
+        "categoria":  "Neurologia",
+        "receptor_sugerido":  "Receptor NMDA",
+        "tipo_receptor":  "Receptor de membrana",
+        "ligando_sugerido":  "Memantina",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo neurologico",
+        "nota_clinico_tecnica":  "modelo de receptor ionotropico"
+    },
+    {
+        "id":  "M074",
+        "categoria":  "Neurologia",
+        "receptor_sugerido":  "Transportador de serotonina",
+        "tipo_receptor":  "Transportador",
+        "ligando_sugerido":  "Fluoxetina",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo psiquiatrico",
+        "nota_clinico_tecnica":  "prueba sobre transportador"
+    },
+    {
+        "id":  "M075",
+        "categoria":  "Neurologia",
+        "receptor_sugerido":  "GABA transaminasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Vigabatrina",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo neurologico",
+        "nota_clinico_tecnica":  "metabolismo GABA"
+    },
+    {
+        "id":  "M076",
+        "categoria":  "Neurologia",
+        "receptor_sugerido":  "Acetilcolinesterasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Galantamina",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo neurologico",
+        "nota_clinico_tecnica":  "comparacion con donepezilo"
+    },
+    {
+        "id":  "M077",
+        "categoria":  "Neurologia",
+        "receptor_sugerido":  "Butirilcolinesterasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Rivastigmina",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo neurologico",
+        "nota_clinico_tecnica":  "comparacion entre colinesterasas"
+    },
+    {
+        "id":  "M078",
+        "categoria":  "Neurologia",
+        "receptor_sugerido":  "BACE1",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Verubecestat",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo neurologico",
+        "nota_clinico_tecnica":  "caso especifico para Alzheimer"
+    },
+    {
+        "id":  "M079",
+        "categoria":  "Neurologia",
+        "receptor_sugerido":  "Receptor cannabinoide CB1",
+        "tipo_receptor":  "Receptor de membrana",
+        "ligando_sugerido":  "Cannabidiol",
+        "tipo_ligando":  "Fitocannabinoide",
+        "objetivo_de_prueba":  "objetivo neurologico",
+        "nota_clinico_tecnica":  "ligando natural lipofilico"
+    },
+    {
+        "id":  "M080",
+        "categoria":  "Neurologia",
+        "receptor_sugerido":  "TRPV1",
+        "tipo_receptor":  "Canal ionico",
+        "ligando_sugerido":  "Capsaicina",
+        "tipo_ligando":  "Producto natural",
+        "objetivo_de_prueba":  "objetivo sensorial",
+        "nota_clinico_tecnica":  "caso util de canal ionico"
+    },
+    {
+        "id":  "M081",
+        "categoria":  "Endocrinologia",
+        "receptor_sugerido":  "PPAR gamma",
+        "tipo_receptor":  "Receptor nuclear",
+        "ligando_sugerido":  "Pioglitazona",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo diabetologico",
+        "nota_clinico_tecnica":  "receptor metabolico clasico"
+    },
+    {
+        "id":  "M082",
+        "categoria":  "Endocrinologia",
+        "receptor_sugerido":  "Receptor glucocorticoide",
+        "tipo_receptor":  "Receptor nuclear",
+        "ligando_sugerido":  "Dexametasona",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo hormonal",
+        "nota_clinico_tecnica":  "union receptor-esteroide"
+    },
+    {
+        "id":  "M083",
+        "categoria":  "Endocrinologia",
+        "receptor_sugerido":  "Receptor mineralocorticoide",
+        "tipo_receptor":  "Receptor nuclear",
+        "ligando_sugerido":  "Espironolactona",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo hormonal",
+        "nota_clinico_tecnica":  "antagonismo mineralocorticoide"
+    },
+    {
+        "id":  "M084",
+        "categoria":  "Endocrinologia",
+        "receptor_sugerido":  "Receptor de progesterona",
+        "tipo_receptor":  "Receptor nuclear",
+        "ligando_sugerido":  "Progesterona",
+        "tipo_ligando":  "Hormona",
+        "objetivo_de_prueba":  "objetivo hormonal",
+        "nota_clinico_tecnica":  "caso fisiologico sencillo"
+    },
+    {
+        "id":  "M085",
+        "categoria":  "Endocrinologia",
+        "receptor_sugerido":  "ER beta",
+        "tipo_receptor":  "Receptor nuclear",
+        "ligando_sugerido":  "Estradiol",
+        "tipo_ligando":  "Hormona",
+        "objetivo_de_prueba":  "objetivo hormonal",
+        "nota_clinico_tecnica":  "comparacion con ER alfa"
+    },
+    {
+        "id":  "M086",
+        "categoria":  "Endocrinologia",
+        "receptor_sugerido":  "Receptor tiroideo beta",
+        "tipo_receptor":  "Receptor nuclear",
+        "ligando_sugerido":  "Liotironina",
+        "tipo_ligando":  "Hormona",
+        "objetivo_de_prueba":  "objetivo hormonal",
+        "nota_clinico_tecnica":  "union hormona tiroidea"
+    },
+    {
+        "id":  "M087",
+        "categoria":  "Endocrinologia",
+        "receptor_sugerido":  "VDR (receptor de vitamina D)",
+        "tipo_receptor":  "Receptor nuclear",
+        "ligando_sugerido":  "Calcifediol",
+        "tipo_ligando":  "Vitamina",
+        "objetivo_de_prueba":  "objetivo endocrino",
+        "nota_clinico_tecnica":  "comparacion vitamina D activa vs precursora"
+    },
+    {
+        "id":  "M088",
+        "categoria":  "Endocrinologia",
+        "receptor_sugerido":  "DPP-4",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Vildagliptina",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo diabetologico",
+        "nota_clinico_tecnica":  "comparacion con sitagliptina"
+    },
+    {
+        "id":  "M089",
+        "categoria":  "Endocrinologia",
+        "receptor_sugerido":  "SGLT2",
+        "tipo_receptor":  "Transportador",
+        "ligando_sugerido":  "Dapagliflozina",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo diabetologico",
+        "nota_clinico_tecnica":  "transportador metabolico"
+    },
+    {
+        "id":  "M090",
+        "categoria":  "Endocrinologia",
+        "receptor_sugerido":  "Aromatasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Anastrozol",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo endocrino",
+        "nota_clinico_tecnica":  "segundo inhibidor aromatasa para comparar"
+    },
+    {
+        "id":  "M091",
+        "categoria":  "Cardiometabolico",
+        "receptor_sugerido":  "Receptor AT1 de angiotensina",
+        "tipo_receptor":  "Receptor de membrana",
+        "ligando_sugerido":  "Losartan",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo cardiovascular",
+        "nota_clinico_tecnica":  "prueba muy util y conocida"
+    },
+    {
+        "id":  "M092",
+        "categoria":  "Cardiometabolico",
+        "receptor_sugerido":  "ACE",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Lisinopril",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo cardiovascular",
+        "nota_clinico_tecnica":  "comparacion con enalaprilato"
+    },
+    {
+        "id":  "M093",
+        "categoria":  "Cardiometabolico",
+        "receptor_sugerido":  "COX-1",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Aspirina",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo antiagregante y antiinflamatorio",
+        "nota_clinico_tecnica":  "caso clasico"
+    },
+    {
+        "id":  "M094",
+        "categoria":  "Cardiometabolico",
+        "receptor_sugerido":  "Trombina",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Dabigatran",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo anticoagulante",
+        "nota_clinico_tecnica":  "prueba hemostasia"
+    },
+    {
+        "id":  "M095",
+        "categoria":  "Cardiometabolico",
+        "receptor_sugerido":  "Factor Xa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Apixaban",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo anticoagulante",
+        "nota_clinico_tecnica":  "caso muy util en docking farmacologico"
+    },
+    {
+        "id":  "M096",
+        "categoria":  "Cardiometabolico",
+        "receptor_sugerido":  "PDE3",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Cilostazol",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo vascular y plaquetario",
+        "nota_clinico_tecnica":  "ensayo cardiometabolico"
+    },
+    {
+        "id":  "M097",
+        "categoria":  "Cardiometabolico",
+        "receptor_sugerido":  "Neprilisina",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Sacubitrilato",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo cardiovascular",
+        "nota_clinico_tecnica":  "prueba sobre neprilisina"
+    },
+    {
+        "id":  "M098",
+        "categoria":  "Cardiometabolico",
+        "receptor_sugerido":  "Xantina oxidasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Alopurinol",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo metabolico",
+        "nota_clinico_tecnica":  "caso acido urico y oxidacion"
+    },
+    {
+        "id":  "M099",
+        "categoria":  "Cardiometabolico",
+        "receptor_sugerido":  "Aldosa reductasa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Epalrestat",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo diabetologico",
+        "nota_clinico_tecnica":  "prueba de complicaciones metabolicas"
+    },
+    {
+        "id":  "M100",
+        "categoria":  "Cardiometabolico",
+        "receptor_sugerido":  "Factor Xa",
+        "tipo_receptor":  "Enzima",
+        "ligando_sugerido":  "Rivaroxaban",
+        "tipo_ligando":  "Farmaco",
+        "objetivo_de_prueba":  "objetivo anticoagulante",
+        "nota_clinico_tecnica":  "segundo inhibidor para comparar resultados"
+    }
+]

@@ -1,0 +1,101 @@
+id,categoria,receptor_sugerido,tipo_receptor,ligando_sugerido,tipo_ligando,objetivo_de_prueba,nota_clinico_tecnica
+M001,Vitaminas,VDR (receptor de vitamina D),Receptor nuclear,Calcitriol,Vitamina,hormona y vitamina liposoluble,union vitamina-receptor para pruebas endocrinas
+M002,Vitaminas,RXR alfa,Receptor nuclear,Acido retinoico,Vitamina/retinoide,modulacion transcripcional,prueba clasica de retinoides
+M003,Vitaminas,Transtiretina,Proteina transportadora,Retinol,Vitamina,union de transporte,util para vitamina A y proteinas transportadoras
+M004,Vitaminas,Albumina serica humana,Proteina transportadora,Vitamina K1,Vitamina,union plasmática,estudio simple de transporte
+M005,Vitaminas,PPAR gamma,Receptor nuclear,Alfa-tocoferol,Vitamina,metabolismo lipido,prueba de vitamina E como compuesto hidrofobico
+M006,Vitaminas,Carbonic anhydrase II,Enzima,Riboflavina,Vitamina,interaccion enzima-vitamina,estudio exploratorio
+M007,Vitaminas,Acetilcolinesterasa,Enzima,Tiamina,Vitamina,prueba neurometabolica,ligando pequeño de prueba
+M008,Vitaminas,Dihidrofolato reductasa,Enzima,Acido folico,Vitamina/cofactor,union a enzima folato,clasico para evaluar pocket de folatos
+M009,Vitaminas,Biotin carboxylase,Enzima,Biotina,Vitamina/cofactor,union cofactor-enzima,ensayo de alta especificidad
+M010,Vitaminas,VDR (receptor de vitamina D),Receptor nuclear,Calcifediol,Vitamina,comparacion con calcitriol,util para comparar analogos
+M011,Productos naturales,ACE2,Enzima de membrana,Quercetina,Flavonoide,union exploratoria,compuesto natural muy usado en docking
+M012,Productos naturales,COX-2,Enzima,Curcumina,Polifenol,prueba antiinflamatoria,caso comun de productos naturales
+M013,Productos naturales,MAO-B,Enzima,Resveratrol,Polifenol,prueba neurologica,compuesto antioxidante conocido
+M014,Productos naturales,Aromatasa,Enzima,Genisteina,Isoflavona,prueba endocrina,ligando vegetal tipo fitoestrogeno
+M015,Productos naturales,EGFR quinasa,Quinasa,EGCG,Polifenol,prueba oncológica,compuesto de te verde
+M016,Productos naturales,BACE1,Enzima,Cafeina,Alcaloide,union exploratoria,ligando pequeño muy conocido
+M017,Productos naturales,Acetilcolinesterasa,Enzima,Nicotina,Alcaloide,prueba neurofarmacologica,ligando pequeño rapido de evaluar
+M018,Productos naturales,PDE5,Enzima,Capsaicina,Producto natural,prueba de bolsillo hidrofobico,interes en señalizacion vascular
+M019,Productos naturales,Xantina oxidasa,Enzima,Luteolina,Flavonoide,prueba antioxidante,objetivo en metabolismo purinas
+M020,Productos naturales,Tirosinasa,Enzima,Kaempferol,Flavonoide,prueba dermatologica,enzima frecuente en docking cosmetico
+M021,Farmacos,Albumina serica humana,Proteina transportadora,Paracetamol,Farmaco,union plasmática,prueba simple de transporte y afinidad
+M022,Farmacos,COX-2,Enzima,Ibuprofeno,Farmaco,antiinflamatorio clásico,ideal como caso de prueba rapido
+M023,Farmacos,COX-2,Enzima,Naproxeno,Farmaco,antiinflamatorio clásico,comparacion con otros AINEs
+M024,Farmacos,Acetilcolinesterasa,Enzima,Donepezilo,Farmaco,objetivo neurologico,ligando clasico en Alzheimer
+M025,Farmacos,BACE1,Enzima,Memantina,Farmaco,prueba neurologica,exploratorio para bolsillo enzimatica
+M026,Farmacos,Aromatasa,Enzima,Letrozol,Farmaco,objetivo endocrino,onco-endocrinologia
+M027,Farmacos,Receptor de androgenos,Receptor nuclear,Flutamida,Farmaco,objetivo hormonal,comparacion antiandrogenica
+M028,Farmacos,ER alfa,Receptor nuclear,Tamoxifeno,Farmaco,objetivo hormonal,onco-endocrinologia mamaria
+M029,Farmacos,EGFR quinasa,Quinasa,Erlotinib,Farmaco,objetivo oncológico,caso muy comun en docking de quinasas
+M030,Farmacos,HIV proteasa,Enzima,Lopinavir,Farmaco,objetivo antiviral,prueba clasica de antivirales
+M031,Farmacos,Neuraminidasa,Enzima,Oseltamivir,Farmaco,objetivo antiviral,caso didactico influenza
+M032,Farmacos,Dihidrofolato reductasa,Enzima,Metotrexato,Farmaco,objetivo antimetabolito,prueba fuerte de union a folatos
+M033,Farmacos,Carbonic anhydrase II,Enzima,Acetazolamida,Farmaco,objetivo enzimatico,caso frecuente de inhibicion enzimatica
+M034,Farmacos,PDE5,Enzima,Sildenafil,Farmaco,objetivo vascular,ligando muy conocido
+M035,Farmacos,DPP-4,Enzima,Sitagliptina,Farmaco,objetivo diabetologico,prueba metabolica moderna
+M036,Farmacos,HMG-CoA reductasa,Enzima,Atorvastatina,Farmaco,objetivo cardiometabolico,caso util para estatinas
+M037,Farmacos,ACE,Enzima,Enalaprilato,Farmaco,objetivo cardiovascular,prueba clasica de inhibidores ECA
+M038,Farmacos,Renina,Enzima,Aliskiren,Farmaco,objetivo cardiovascular,modelo del eje renina-angiotensina
+M039,Farmacos,Mpro SARS-CoV-2,Proteasa,Nirmatrelvir,Farmaco,objetivo antiviral,caso moderno muy util
+M040,Farmacos,RdRp viral,Polimerasa,Remdesivir,Farmaco,objetivo antiviral,prueba de polimerasa viral
+M041,Antivirales,Spike RBD,Proteina viral,Quercetina,Flavonoide,union exploratoria viral,estudio exploratorio no confirmatorio
+M042,Antivirales,Mpro SARS-CoV-2,Proteasa,Quercetina,Flavonoide,union exploratoria viral,prueba natural contra proteasa viral
+M043,Antivirales,Mpro SARS-CoV-2,Proteasa,Baicaleina,Flavonoide,union exploratoria viral,polifenol frecuente en literatura
+M044,Antivirales,Spike RBD,Proteina viral,Hesperidina,Flavonoide,union exploratoria viral,ligando natural grande y flexible
+M045,Antivirales,HIV integrasa,Enzima,Raltegravir,Farmaco,objetivo antiviral,prueba antirretroviral util
+M046,Antivirales,HCV NS3 proteasa,Proteasa,Simeprevir,Farmaco,objetivo antiviral,caso hepatitis C
+M047,Antivirales,HCV NS5B polimerasa,Polimerasa,Sofosbuvir,Farmaco,objetivo antiviral,prueba de polimerasa viral
+M048,Antivirales,Neuraminidasa,Enzima,Zanamivir,Farmaco,objetivo antiviral,comparacion con oseltamivir
+M049,Antivirales,HIV proteasa,Enzima,Atazanavir,Farmaco,objetivo antiviral,segundo caso para comparacion
+M050,Antivirales,Influenza endonucleasa PA,Enzima,Baloxavir,Farmaco,objetivo antiviral,prueba de inhibidor moderno
+M051,Antibacterianos,DNA girasa bacteriana,Enzima,Ciprofloxacino,Farmaco,objetivo antibacteriano,caso clasico de girasa
+M052,Antibacterianos,DHPS,Enzima,Sulfametoxazol,Farmaco,objetivo antibacteriano,via del folato bacteriano
+M053,Antibacterianos,PBP bacteriana,Enzima de pared celular,Amoxicilina,Farmaco,objetivo antibacteriano,prueba sobre diana de beta-lactamicos
+M054,Antibacterianos,Dihidrofolato reductasa bacteriana,Enzima,Trimetoprim,Farmaco,objetivo antibacteriano,caso muy clasico y util
+M055,Antibacterianos,DNA girasa bacteriana,Enzima,Levofloxacino,Farmaco,objetivo antibacteriano,comparacion con ciprofloxacino
+M056,Antibacterianos,Topoisomerasa IV,Enzima,Moxifloxacino,Farmaco,objetivo antibacteriano,prueba de quinolonas
+M057,Antibacterianos,FabI,Enzima,Triclosan,Farmaco,objetivo antibacteriano,ensayo en biosintesis lipidos
+M058,Antibacterianos,Beta-lactamasa,Enzima,Clavulanato,Farmaco,objetivo antibacteriano,prueba sobre resistencia
+M059,Antibacterianos,RNA polimerasa bacteriana,Enzima,Rifampicina,Farmaco,objetivo antibacteriano,caso antimicrobiano util
+M060,Antibacterianos,MurA,Enzima,Fosfomicina,Farmaco,objetivo antibacteriano,caso pared bacteriana
+M061,Oncologia,VEGFR2,Quinasa,Sorafenib,Farmaco,objetivo oncológico,prueba quinasa antiangiogenica
+M062,Oncologia,BRAF V600E,Quinasa,Vemurafenib,Farmaco,objetivo oncológico,modelo de quinasa mutada
+M063,Oncologia,MEK1,Quinasa,Trametinib,Farmaco,objetivo oncológico,cascada MAPK
+M064,Oncologia,PI3K alfa,Quinasa,Alpelisib,Farmaco,objetivo oncológico,via PI3K-AKT
+M065,Oncologia,mTOR,Quinasa,Everolimus,Farmaco,objetivo oncológico y metabolico,via crecimiento celular
+M066,Oncologia,PARP1,Enzima,Olaparib,Farmaco,objetivo oncológico,reparacion de ADN
+M067,Oncologia,CDK4/6,Quinasa,Palbociclib,Farmaco,objetivo oncológico,ciclo celular
+M068,Oncologia,BTK,Quinasa,Ibrutinib,Farmaco,objetivo oncohematologico,caso de quinasa covalente
+M069,Oncologia,JAK2,Quinasa,Ruxolitinib,Farmaco,objetivo oncohematologico,via JAK-STAT
+M070,Oncologia,ALK,Quinasa,Crizotinib,Farmaco,objetivo oncológico,otro caso util de quinasa
+M071,Neurologia,MAO-B,Enzima,Selegilina,Farmaco,objetivo neurologico,parkinson y monoaminas
+M072,Neurologia,COMT,Enzima,Entacapona,Farmaco,objetivo neurologico,parkinson y catecolaminas
+M073,Neurologia,Receptor NMDA,Receptor de membrana,Memantina,Farmaco,objetivo neurologico,modelo de receptor ionotropico
+M074,Neurologia,Transportador de serotonina,Transportador,Fluoxetina,Farmaco,objetivo psiquiatrico,prueba sobre transportador
+M075,Neurologia,GABA transaminasa,Enzima,Vigabatrina,Farmaco,objetivo neurologico,metabolismo GABA
+M076,Neurologia,Acetilcolinesterasa,Enzima,Galantamina,Farmaco,objetivo neurologico,comparacion con donepezilo
+M077,Neurologia,Butirilcolinesterasa,Enzima,Rivastigmina,Farmaco,objetivo neurologico,comparacion entre colinesterasas
+M078,Neurologia,BACE1,Enzima,Verubecestat,Farmaco,objetivo neurologico,caso especifico para Alzheimer
+M079,Neurologia,Receptor cannabinoide CB1,Receptor de membrana,Cannabidiol,Fitocannabinoide,objetivo neurologico,ligando natural lipofilico
+M080,Neurologia,TRPV1,Canal ionico,Capsaicina,Producto natural,objetivo sensorial,caso util de canal ionico
+M081,Endocrinologia,PPAR gamma,Receptor nuclear,Pioglitazona,Farmaco,objetivo diabetologico,receptor metabolico clasico
+M082,Endocrinologia,Receptor glucocorticoide,Receptor nuclear,Dexametasona,Farmaco,objetivo hormonal,union receptor-esteroide
+M083,Endocrinologia,Receptor mineralocorticoide,Receptor nuclear,Espironolactona,Farmaco,objetivo hormonal,antagonismo mineralocorticoide
+M084,Endocrinologia,Receptor de progesterona,Receptor nuclear,Progesterona,Hormona,objetivo hormonal,caso fisiologico sencillo
+M085,Endocrinologia,ER beta,Receptor nuclear,Estradiol,Hormona,objetivo hormonal,comparacion con ER alfa
+M086,Endocrinologia,Receptor tiroideo beta,Receptor nuclear,Liotironina,Hormona,objetivo hormonal,union hormona tiroidea
+M087,Endocrinologia,VDR (receptor de vitamina D),Receptor nuclear,Calcifediol,Vitamina,objetivo endocrino,comparacion vitamina D activa vs precursora
+M088,Endocrinologia,DPP-4,Enzima,Vildagliptina,Farmaco,objetivo diabetologico,comparacion con sitagliptina
+M089,Endocrinologia,SGLT2,Transportador,Dapagliflozina,Farmaco,objetivo diabetologico,transportador metabolico
+M090,Endocrinologia,Aromatasa,Enzima,Anastrozol,Farmaco,objetivo endocrino,segundo inhibidor aromatasa para comparar
+M091,Cardiometabolico,Receptor AT1 de angiotensina,Receptor de membrana,Losartan,Farmaco,objetivo cardiovascular,prueba muy util y conocida
+M092,Cardiometabolico,ACE,Enzima,Lisinopril,Farmaco,objetivo cardiovascular,comparacion con enalaprilato
+M093,Cardiometabolico,COX-1,Enzima,Aspirina,Farmaco,objetivo antiagregante y antiinflamatorio,caso clasico
+M094,Cardiometabolico,Trombina,Enzima,Dabigatran,Farmaco,objetivo anticoagulante,prueba hemostasia
+M095,Cardiometabolico,Factor Xa,Enzima,Apixaban,Farmaco,objetivo anticoagulante,caso muy util en docking farmacologico
+M096,Cardiometabolico,PDE3,Enzima,Cilostazol,Farmaco,objetivo vascular y plaquetario,ensayo cardiometabolico
+M097,Cardiometabolico,Neprilisina,Enzima,Sacubitrilato,Farmaco,objetivo cardiovascular,prueba sobre neprilisina
+M098,Cardiometabolico,Xantina oxidasa,Enzima,Alopurinol,Farmaco,objetivo metabolico,caso acido urico y oxidacion
+M099,Cardiometabolico,Aldosa reductasa,Enzima,Epalrestat,Farmaco,objetivo diabetologico,prueba de complicaciones metabolicas
+M100,Cardiometabolico,Factor Xa,Enzima,Rivaroxaban,Farmaco,objetivo anticoagulante,segundo inhibidor para comparar resultados

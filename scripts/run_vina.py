@@ -26,6 +26,7 @@ Reglas:
 """
 from __future__ import annotations
 
+import logging
 from pathlib import Path
 
 from scripts.common import find_executable, require_file, run_cmd, which_or_none
@@ -63,7 +64,7 @@ def run_vina(
     output_pdbqt.parent.mkdir(parents=True, exist_ok=True)
     output_log.parent.mkdir(parents=True, exist_ok=True)
 
-    cmd = [
+    base_cmd = [
         str(vina),
         "--receptor",
         str(receptor_pdbqt),
@@ -92,4 +93,18 @@ def run_vina(
         "--out",
         str(output_pdbqt),
     ]
-    run_cmd(cmd, "Ejecutando AutoDock Vina")
+
+    cmd_with_log = [*base_cmd, "--log", str(output_log)]
+    try:
+        run_cmd(cmd_with_log, "Ejecutando AutoDock Vina")
+    except RuntimeError as exc:
+        msg = str(exc).lower()
+        if "--log" in msg and (
+            "unknown option" in msg
+            or "unrecognized option" in msg
+            or "unrecognised option" in msg
+        ):
+            logging.warning("Esta version de Vina no soporta --log; continuando sin archivo de log.")
+            run_cmd(base_cmd, "Ejecutando AutoDock Vina")
+        else:
+            raise

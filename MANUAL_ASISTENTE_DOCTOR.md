@@ -33,6 +33,36 @@ Validacion:
 - Si aparece "Running on http://127.0.0.1:5000", el servidor esta correcto.
 - Si genera archivo en outputs, el docking termino bien.
 
+### Funcionalidades nuevas en web (modo completo)
+
+1. Modo de trabajo:
+	- Docking completo: preparar + correr + analizar.
+	- Solo preparar archivos PDBQT.
+2. Resumen clinico-tecnico:
+	- Mejor modo.
+	- Mejor afinidad (kcal/mol).
+	- Numero de poses evaluadas.
+3. Tabla de resultados en pantalla:
+	- Mode, Affinity, RMSD l.b., RMSD u.b.
+4. Historial de corridas:
+	- Fecha, operacion, receptor, ligando, mejor afinidad, salida.
+5. Vista 3D integrada:
+	- Visualiza receptor y mejor pose (MODE 1) directamente en navegador.
+
+### Funcionalidades profesionales (doctor)
+
+1. Identificador de caso clinico:
+	- Campo para registrar y rastrear cada corrida por caso.
+2. Objetivo clinico-tecnico:
+	- Campo de contexto para documentar la finalidad del docking.
+3. Evaluacion clinica automatica:
+	- Clasificacion de senal (alta, media, baja) basada en afinidad.
+	- Consistencia entre MODE 1 y MODE 2 para apoyo de interpretacion.
+	- Recomendacion tecnica orientativa para siguientes pasos.
+4. Historial trazable y limpio:
+	- Columna de caso en historial.
+	- Boton para limpiar historial cuando se inicia una nueva serie.
+
 ## 4. AutoDockTools 1.5.6 (preparacion)
 
 ### Receptor
